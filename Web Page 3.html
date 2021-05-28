@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Project</title>
+        <link rel="stylesheet"type="text/css" href="project3.css">
+    </head>
+    <body>
+        <h1>Inventory-Dispatch Table</h1>
+        <h2>Intradepartment Table</h2>
+        <p>Enter The Items:</p>
+
+            <table border="2" style="width: 870px;">
+                <tr>
+                    <th>Source Department</th>
+                    <th>Inventory Id</th>
+                    <th>Inventory Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Of Measure</th>
+                    <th>Target Department</th>
+                </tr>
+                <tr>
+                    <td><input type="textbox" id="source" required></td>
+                    <td><input type="textbox" id="invID" required></td>
+                    <td><input type="textbox" id="invName" required></td>
+                    <td><input type="textbox" id="qty" required></td>
+                    <td><input type="textbox" id="uom" required></td>
+                    <td><input type="textbox" id="target" required></td>
+                </tr>
+            </table>
+         <p>After Clicking The Submit Button Your Items Has Been Added In The Cart Table</p>
+         <button type="submit" id="submit">Submit</button>
+
+
+        <br><br><br>
+        <h2>Cart Table</h2>
+        <table border="2" id="cart" style="width: 870px;">
+            <tr>
+                <th>Source Department</th>
+                <th>Inventory Id</th>
+                <th>Inventory Name</th>
+                <th>Quantity</th>
+                <th>Unit Of Measure</th>
+                <th>Target Department</th>
+            </tr>
+        </table>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="cart1.js"></script>
+        <p>After Clicking The Submit Button You Get The Request Id Of Items Which Has Been Added In The Cart</p>
+        <button type="submit" class="submit">Submit</button>
+        <script type="text/javascript" src="f.js"></script>
+        <h2>Source Department Permission Table</h2>
+        <table border="2" id="inventorytable" style="width: 870px;">
+               <tr>
+                <th>Inventory Id</th>
+                <th>Inventory Name</th>
+                <th>Quantity</th>
+                <th>Unit Of Measure</th>
+             </tr>
+        </table>
+        <p>Approval or Rejection By The Source Department</p>
+        <p><button type="approve" class="approve">Approve</button></p>
+        <p><button type="reject" class="reject">Reject</button></p>
+        <script type="text/javascript" src="g.js"></script>
+        <script type="text/javascript" src="h.js"></script> 
+<h2>Target Department Permisssion Table</h2>
+<table border="2" id="inventorytargettable" style="width:870px";>
+ <tr>
+    <th>Inventory Id</th>
+    <th>Inventory Name</th>
+    <th>Quantity</th>
+    <th>Unit Of Measure</th>
+ </tr>
+ <script type="text/javascript" src="jquery.js"></script>
+ <p>Approval or Rejection By The Target Department</p>
+ <p><button type="approve" class="approve">Approve</button></p>
+ <p><button type="reject" class="reject">Reject</button></p>
+ <script type="text/javascript" src="t.js"></script>
+ <script type="text/javascript" src="p.js"></script>
+ </body>
+ </html>
+ 
+ 
